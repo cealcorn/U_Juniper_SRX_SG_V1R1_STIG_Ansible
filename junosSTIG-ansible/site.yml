@@ -1,4 +1,6 @@
 - hosts: all
   gather_facts: no
+  vars_files:
+    - junosSTIG-ansible/roles/junosSTIG/vars/custom.yml
   roles:
     - junosSTIG
